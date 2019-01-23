@@ -60,3 +60,15 @@ distinct_tz=set(df['regular'])
 my_dict={}
 for tz in distinct_tz :
     my_dict[tz]=list(df[df['regular']==tz]['Region'].values)
+    
+    
+"""
+TZ	States 
+GMT/UTC - 6h	Alabama', 'Arkansas', 'Illinois', 'Iowa', 'Kansas', 'Louisiana', 'Minnesota', 'Mississippi', 'Missouri', 'Nebraska', 'North Dakota', 'Oklahoma', 'South Dakota', 'Texas', 'Wisconsin'
+GMT/UTC - 7h	Arizona', 'Colorado', 'Idaho', 'Montana', 'New Mexico', 'Oregon', 'Utah', 'Wyoming'
+GMT/UTC - 5h	Connecticut', 'Delaware', 'Florida', 'Georgia', 'Indiana', 'Kentucky', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'New Hampshire', 'New Jersey', 'New York', 'North Carolina', 'Ohio', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'Tennessee', 'Vermont', 'Virginia', 'West Virginia', 'Washington, DC'
+GMT/UTC - 10h Standard Time	Hawaii'
+GMT/UTC - 8h	California', 'Nevada', 'Washington'
+GMT/UTC - 4h Standard Time	Puerto Rico'
+GMT/UTC - 9h	Alaska'
+"""
